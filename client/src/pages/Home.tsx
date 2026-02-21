@@ -3,6 +3,9 @@ import { Card } from "@/components/ui/card";
 import { Smartphone, Wrench, Zap, Cpu, Shield, Hammer, MapPin, Star, Instagram, Mail,  } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
+import { InstagramSection } from "../components/InstagramSection";
+
+
 
 
 
@@ -15,82 +18,191 @@ import { useState } from "react";
  */
 const projects = [
   {
-    title: "Montagem PC Gamer RGB",
+    title: "Montagem PC Gamer de Entrada",
     images: [
-      "/images/projeto1-1.jpg",
-      "/images/projeto1-2.jpg",
-      "/images/projeto1-3.jpg",
+      "/images/montagem-entrada/01.jpg",
+      "/images/montagem-entrada/02.jpg",
+      "/images/montagem-entrada/03.jpg",
+      "/images/montagem-entrada/04.jpg",
+      "/images/montagem-entrada/05.jpg",
+      "/images/montagem-entrada/06.jpg",
+      "/images/montagem-entrada/07.jpg",
+      "/images/montagem-entrada/08.jpg",
     ],
   },
   {
-    title: "Limpeza Completa",
+    title: "Montagem PC Wesley",
     images: [
-      "/images/projeto2-1.jpg",
-      "/images/projeto2-2.jpg",
-      "/images/projeto2-3.jpg",
+      "/images/montagem01/07.jpg",
+      "/images/montagem01/01.jpg",
+      "/images/montagem01/02.jpg",
+      "/images/montagem01/03.jpg",
+      "/images/montagem01/04.jpg",
+      "/images/montagem01/05.jpg",
+      "/images/montagem01/06.jpg",
+      "/images/montagem01/08.jpg",
+      "/images/montagem01/09.jpg",
     ],
   },
   {
-    title: "Projeto 3 - Upgrade de Hardware",
+    title: "Limpeza PC Faraó Tutancâmon",
     images: [
-      "/images/projeto1-1.jpg",
-      "/images/projeto1-2.jpg",
-      "/images/projeto1-3.jpg",
+      "/images/limpezacompleta01/01.jpg",
+      "/images/limpezacompleta01/02.jpg",
+      "/images/limpezacompleta01/03.jpg",
+      "/images/limpezacompleta01/04.jpg",
+      "/images/limpezacompleta01/05.jpg",
+      "/images/limpezacompleta01/06.jpg",
+      "/images/limpezacompleta01/07.jpg",
+      "/images/limpezacompleta01/08.jpg",
+      "/images/limpezacompleta01/09.jpg",
+      "/images/limpezacompleta01/10.jpg",
+      "/images/limpezacompleta01/11.jpg",
+      "/images/limpezacompleta01/12.jpg",
+      "/images/limpezacompleta01/13.jpg",
+      "/images/limpezacompleta01/14.jpg",
+      "/images/limpezacompleta01/15.jpg",
+      "/images/limpezacompleta01/16.jpg",
+      "/images/limpezacompleta01/17.jpg",
     ],
   },
   {
-    title: "Projeto 4 - Troca de Fonte",
+    title: "Limpeza PC Faraó Ramsés",
     images: [
-      "/images/projeto2-1.jpg",
-      "/images/projeto2-2.jpg",
-      "/images/projeto2-3.jpg",
+      "/images/limpezacompleta02/01.jpg",
+      "/images/limpezacompleta02/02.jpg",
+      "/images/limpezacompleta02/03.jpg",
+      "/images/limpezacompleta02/04.jpg",
+      "/images/limpezacompleta02/05.jpg",
+      "/images/limpezacompleta02/06.jpg",
+      "/images/limpezacompleta02/07.jpg",
+      "/images/limpezacompleta02/08.jpg",
+      "/images/limpezacompleta02/09.jpg",
+      "/images/limpezacompleta02/10.jpg",
+      "/images/limpezacompleta02/11.jpg",
+      "/images/limpezacompleta02/12.jpg",
+      "/images/limpezacompleta02/13.jpg",
+      "/images/limpezacompleta02/14.jpg",
+      "/images/limpezacompleta02/15.jpg",
+      "/images/limpezacompleta02/16.jpg",
+      "/images/limpezacompleta02/17.jpg",
+      "/images/limpezacompleta02/18.jpg",
+      "/images/limpezacompleta02/19.jpg",
+      "/images/limpezacompleta02/20.jpg",
+      "/images/limpezacompleta02/21.jpg",
+      "/images/limpezacompleta02/22.jpg",
+      "/images/limpezacompleta02/23.jpg",
+      "/images/limpezacompleta02/24.jpg",
+      "/images/limpezacompleta02/25.jpg",
+      "/images/limpezacompleta02/26.jpg",
+      "/images/limpezacompleta02/27.jpg",
+      "/images/limpezacompleta02/28.jpg",
+      "/images/limpezacompleta02/29.jpg",
+      "/images/limpezacompleta02/30.jpg",
+      "/images/limpezacompleta02/31.jpg",
+      "/images/limpezacompleta02/32.jpg",
+      "/images/limpezacompleta02/33.jpg",
+      "/images/limpezacompleta02/34.jpg",
+      "/images/limpezacompleta02/35.jpg",
+      "/images/limpezacompleta02/36.jpg",
+      "/images/limpezacompleta02/37.jpg",
+      "/images/limpezacompleta02/38.jpg",
+      "/images/limpezacompleta02/39.jpg",
+      "/images/limpezacompleta02/40.jpg",
+      "/images/limpezacompleta02/41.jpg",
+      "/images/limpezacompleta02/42.jpg",
     ],
   },
   {
-    title: "Projeto 5 - Montagem Setup",
+    title: "Troca de Placa mãe, fonte e venda de placa de video",
     images: [
-      "/images/projeto1-1.jpg",
-      "/images/projeto1-2.jpg",
-      "/images/projeto1-3.jpg",
+      "/images/trocaplacamae/01.jpg",
+      "/images/trocaplacamae/02.jpg",
+      "/images/trocaplacamae/03.jpg",
+      "/images/trocaplacamae/04.jpg",
+      "/images/trocaplacamae/05.jpg",
+      "/images/trocaplacamae/06.jpg",
+      "/images/trocaplacamae/07.jpg",
     ],
   },
   {
-    title: "Projeto 6 - Limpeza Geral",
+    title: "Montagem PC Gamer TOP",
     images: [
-      "/images/projeto2-1.jpg",
-      "/images/projeto2-2.jpg",
-      "/images/projeto2-3.jpg",
+      "/images/montagem03/01.jpg",
+      "/images/montagem03/02.jpg",  
+      "/images/montagem03/03.jpg",
+      "/images/montagem03/04.jpg",
+      "/images/montagem03/05.jpg",
+      "/images/montagem03/06.jpg",
+      "/images/montagem03/07.jpg",
+      "/images/montagem03/08.jpg",
+      "/images/montagem03/09.jpg",
+      "/images/montagem03/10.jpg",
+      "/images/montagem03/11.jpg",
+      "/images/montagem03/12.jpg",
+      "/images/montagem03/13.jpg",
+      "/images/montagem03/14.jpg",
+      "/images/montagem03/15.jpg",
+      "/images/montagem03/16.jpg",
+      "/images/montagem03/17.jpg",
+      "/images/montagem03/18.jpg",
+      "/images/montagem03/19.jpg",
+      "/images/montagem03/20.jpg",    
+      "/images/montagem03/21.jpg",
+      "/images/montagem03/22.jpg",
+      "/images/montagem03/23.jpg",
+      "/images/montagem03/24.jpg",
+      "/images/montagem03/25.jpg",
+      "/images/montagem03/26.jpg",
+      "/images/montagem03/27.jpg",
+      "/images/montagem03/28.jpg",
+      "/images/montagem03/29.jpg",
     ],
   },
 ];
+
+type ModalData = {
+  projectIndex: number;
+  imageIndex: number;
+};
+
 export default function Home() {
+
+  // Controle do slide de cada projeto
   const [currentSlides, setCurrentSlides] = useState(
-  projects.map(() => 0)
-);
-
-const nextSlide = (projectIndex: number) => {
-  setCurrentSlides((prev) =>
-    prev.map((value, index) =>
-      index === projectIndex
-        ? value === projects[projectIndex].images.length - 1
-          ? 0
-          : value + 1
-        : value
-    )
+    projects.map(() => 0)
   );
-};
 
-const prevSlide = (projectIndex: number) => {
-  setCurrentSlides((prev) =>
-    prev.map((value, index) =>
-      index === projectIndex
-        ? value === 0
-          ? projects[projectIndex].images.length - 1
-          : value - 1
-        : value
-    )
-  );
-};
+  // Próximo slide
+  const nextSlide = (projectIndex: number) => {
+    setCurrentSlides((prev) =>
+      prev.map((value, index) =>
+        index === projectIndex
+          ? value === projects[projectIndex].images.length - 1
+            ? 0
+            : value + 1
+          : value
+      )
+    );
+  };
+
+  // Slide anterior
+  const prevSlide = (projectIndex: number) => {
+    setCurrentSlides((prev) =>
+      prev.map((value, index) =>
+        index === projectIndex
+          ? value === 0
+            ? projects[projectIndex].images.length - 1
+            : value - 1
+          : value
+      )
+    );
+  };
+
+  // Controle do modal (imagem ampliada)
+  const [modalData, setModalData] = useState<ModalData | null>(null);
+
+  // Outra lógica sua
   const [activeCity, setActiveCity] = useState(0);
 
   const cities = [
@@ -213,7 +325,7 @@ const prevSlide = (projectIndex: number) => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Servicos */}
       <section className="py-20 sm:py-32 bg-secondary/20">
         <div className="container space-y-12">
           <div className="max-w-2xl mx-auto text-center space-y-4">
@@ -296,6 +408,14 @@ const prevSlide = (projectIndex: number) => {
   <p className="text-muted-foreground text-lg">
     Confira alguns dos nossos projetos e manutenções realizadas
   </p>
+  <div className="pt-6">
+  <a
+    href="/galeria"
+    className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-black rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
+  >
+    Ver todos os trabalhos →
+  </a>
+</div>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
   {projects.map((project, projectIndex) => (
@@ -305,11 +425,17 @@ const prevSlide = (projectIndex: number) => {
       </h3>
 
       <div className="relative h-56 overflow-hidden rounded-lg border border-border">
-        <img
-          src={project.images[currentSlides[projectIndex]]}
-          alt={project.title}
-          className="w-full h-full object-cover transition-all duration-500"
-        />
+       <img
+  src={project.images[currentSlides[projectIndex]]}
+  alt={project.title}
+  className="w-full h-full object-cover transition-all duration-500 cursor-pointer hover:scale-105"
+  onClick={() =>
+    setModalData({
+      projectIndex,
+      imageIndex: currentSlides[projectIndex],
+    })
+  }
+/>
 
         <button
           onClick={() => prevSlide(projectIndex)}
@@ -389,39 +515,77 @@ const prevSlide = (projectIndex: number) => {
       
 
       {/* Instagram Section */}
-      <section className="py-20 sm:py-32 bg-secondary/20">
-        <div className="container space-y-12">
-          <div className="max-w-2xl mx-auto text-center space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold">Nos Acompanhe no Instagram</h2>
-            <p className="text-muted-foreground text-lg">
-              Fique por dentro das novidades, dicas e trabalhos realizados
-            </p>
-          </div>
+<section className="py-20 sm:py-32 bg-secondary/20">
+  <div className="container space-y-12">
+    {/* Título */}
+    <div className="max-w-2xl mx-auto text-center space-y-4">
+      <h2 className="text-3xl sm:text-4xl font-bold">Nos Acompanhe no Instagram</h2>
+      <p className="text-muted-foreground text-lg">
+        Fique por dentro das novidades, dicas e trabalhos realizados
+      </p>
+    </div>
 
-          <div className="flex justify-center">
-            <a
-              href="https://instagram.com/willinfogamer"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg font-bold text-lg transition-all duration-300 glow-orange-hover transform hover:scale-105"
-            >
-              <Instagram className="w-6 h-6" />
-              @willinfogamer
-            </a>
-          </div>
+    {/* Botão para Instagram */}
+    <div className="flex justify-center">
+      <a
+        href="https://instagram.com/willinfogamer"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-3 px-8 py-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg font-bold text-lg transition-all duration-300 glow-orange-hover transform hover:scale-105"
+      >
+        <Instagram className="w-6 h-6" />
+        @willinfogamer
+      </a>
+    </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((item) => (
-              <div
-                key={item}
-                className="aspect-square bg-gradient-to-br from-secondary to-secondary/50 rounded-lg border border-border flex items-center justify-center hover:border-accent/50 transition-all duration-300"
-              >
-                <p className="text-sm text-muted-foreground">Instagram Post</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    {/* Grid com posts */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+  {/* Post 1 */}
+  <div className="aspect-square rounded-lg overflow-hidden border border-border">
+    <iframe
+      src="https://www.instagram.com/p/POST1/embed"
+      className="w-full h-full"
+      allowFullScreen
+      loading="lazy"
+      title="Instagram Post 1"
+    ></iframe>
+  </div>
+
+  {/* Post 2 */}
+  <div className="aspect-square rounded-lg overflow-hidden border border-border">
+    <iframe
+      src="https://www.instagram.com/p/POST2/embed"
+      className="w-full h-full"
+      allowFullScreen
+      loading="lazy"
+      title="Instagram Post 2"
+    ></iframe>
+  </div>
+
+  {/* Post 3 */}
+  <div className="aspect-square rounded-lg overflow-hidden border border-border">
+    <iframe
+      src="https://www.instagram.com/p/POST3/embed"
+      className="w-full h-full"
+      allowFullScreen
+      loading="lazy"
+      title="Instagram Post 3"
+    ></iframe>
+  </div>
+
+  {/* Post 4 */}
+  <div className="aspect-square rounded-lg overflow-hidden border border-border">
+    <iframe
+      src="https://www.instagram.com/p/POST4/embed"
+      className="w-full h-full"
+      allowFullScreen
+      loading="lazy"
+      title="Instagram Post 4"
+    ></iframe>
+  </div>
+</div>
+  </div>
+</section>
 
       {/* CTA Section */}
       <section className="py-20 sm:py-32 bg-gradient-to-r from-secondary/40 to-secondary/20 border-t border-border">
@@ -518,6 +682,72 @@ const prevSlide = (projectIndex: number) => {
           </div>
         </div>
       </footer>
+      {/* Modal de imagem ampliada */}
+{modalData && (
+  <div className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-4">
+
+    <img
+      src={
+        projects[modalData.projectIndex].images[
+          modalData.imageIndex
+        ]
+      }
+      alt="Imagem ampliada"
+      className="max-w-[95%] max-h-[95%] rounded-xl shadow-2xl"
+    />
+
+    {/* Botão fechar */}
+    <button
+      className="absolute top-6 right-6 text-white text-3xl font-bold"
+      onClick={() => setModalData(null)}
+    >
+      ✕
+    </button>
+
+    {/* Botão anterior */}
+    <button
+      className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/20 text-white px-4 py-2 rounded-lg text-2xl"
+      onClick={() =>
+        setModalData((prev) => {
+          if (!prev) return null;
+          const total =
+            projects[prev.projectIndex].images.length;
+          return {
+            ...prev,
+            imageIndex:
+              prev.imageIndex === 0
+                ? total - 1
+                : prev.imageIndex - 1,
+          };
+        })
+      }
+    >
+      ←
+    </button>
+
+    {/* Botão próximo */}
+    <button
+      className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/20 text-white px-4 py-2 rounded-lg text-2xl"
+      onClick={() =>
+        setModalData((prev) => {
+          if (!prev) return null;
+          const total =
+            projects[prev.projectIndex].images.length;
+          return {
+            ...prev,
+            imageIndex:
+              prev.imageIndex === total - 1
+                ? 0
+                : prev.imageIndex + 1,
+          };
+        })
+      }
+    >
+      →
+    </button>
+
+  </div>
+)}
     </div>
   );
 }
