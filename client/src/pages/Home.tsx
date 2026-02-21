@@ -20,14 +20,14 @@ const projects = [
   {
     title: "Montagem PC Gamer de Entrada",
     images: [
-      "/client/public/images/montagem-entrada/01.jpg",
-      "/images/montagem-entrada/02.jpg",
-      "/images/montagem-entrada/03.jpg",
-      "/images/montagem-entrada/04.jpg",
-      "/images/montagem-entrada/05.jpg",
-      "/images/montagem-entrada/06.jpg",
-      "/images/montagem-entrada/07.jpg",
-      "/images/montagem-entrada/08.jpg",
+      "/images/montagementrada/01.jpg",
+      "/images/montagementrada/02.jpg",
+      "/images/montagementrada/03.jpg",
+      "/images/montagementrada/04.jpg",
+      "/images/montagementrada/05.jpg",
+      "/images/montagementrada/06.jpg",
+      "/images/montagementrada/07.jpg",
+      "/images/montagementrada/08.jpg",
     ],
   },
   {
