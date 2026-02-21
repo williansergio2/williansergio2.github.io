@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Montagem PC Gamer de Entrada",
     images: [
-      "/images/montagem-entrada/01.jpg",
+      "public/images/montagem-entrada/01.jpg",
       "/images/montagem-entrada/02.jpg",
       "/images/montagem-entrada/03.jpg",
       "/images/montagem-entrada/04.jpg",
