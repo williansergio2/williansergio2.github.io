@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Smartphone, Wrench, Zap, Cpu, Shield, Hammer, MapPin, Star, Instagram, Mail,  } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { InstagramSection } from "../components/InstagramSection";
 
 
@@ -167,6 +167,18 @@ type ModalData = {
 };
 
 export default function Home() {
+
+  //teste google reviwe
+  useEffect(() => {
+  const script = document.createElement("script");
+  script.src = "https://elfsightcdn.com/platform.js";
+  script.async = true;
+  document.body.appendChild(script);
+
+  return () => {
+    document.body.removeChild(script);
+  };
+}, []);
 
   // Controle do slide de cada projeto
   const [currentSlides, setCurrentSlides] = useState(
@@ -485,7 +497,7 @@ export default function Home() {
       </p>
     </div>
 
-    <div className="bg-secondary/30 border border-accent/20 rounded-xl p-10 text-center space-y-6 max-w-3xl mx-auto">
+    <div className="bg-secondary/30 border border-accent/20 rounded-xl p-10 text-center space-y-6 w-full max-w-[1400px] mx-auto">
 
       {/* Widget do Elfsight */}
       <div className="elfsight-widget">
