@@ -529,9 +529,12 @@ export default function Home() {
       {/* Instagram Section */}
 <section className="py-20 sm:py-32 bg-secondary/20">
   <div className="container space-y-12">
+    
     {/* Título */}
     <div className="max-w-2xl mx-auto text-center space-y-4">
-      <h2 className="text-3xl sm:text-4xl font-bold">Nos Acompanhe no Instagram</h2>
+      <h2 className="text-3xl sm:text-4xl font-bold">
+        Nos Acompanhe no Instagram
+      </h2>
       <p className="text-muted-foreground text-lg">
         Fique por dentro das novidades, dicas e trabalhos realizados
       </p>
@@ -550,52 +553,11 @@ export default function Home() {
       </a>
     </div>
 
-    {/* Grid com posts */}
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-  {/* Post 1 */}
-  <div className="aspect-square rounded-lg overflow-hidden border border-border">
-    <iframe
-      src="https://www.instagram.com/p/POST1/embed"
-      className="w-full h-full"
-      allowFullScreen
-      loading="lazy"
-      title="Instagram Post 1"
-    ></iframe>
-  </div>
+    {/* Widget Instagram */}
+    <div className="mt-10">
+      <div className="elfsight-app-66f698d5-14c6-4567-944c-9fb0f9815f67"></div>
+    </div>
 
-  {/* Post 2 */}
-  <div className="aspect-square rounded-lg overflow-hidden border border-border">
-    <iframe
-      src="https://www.instagram.com/p/POST2/embed"
-      className="w-full h-full"
-      allowFullScreen
-      loading="lazy"
-      title="Instagram Post 2"
-    ></iframe>
-  </div>
-
-  {/* Post 3 */}
-  <div className="aspect-square rounded-lg overflow-hidden border border-border">
-    <iframe
-      src="https://www.instagram.com/p/POST3/embed"
-      className="w-full h-full"
-      allowFullScreen
-      loading="lazy"
-      title="Instagram Post 3"
-    ></iframe>
-  </div>
-
-  {/* Post 4 */}
-  <div className="aspect-square rounded-lg overflow-hidden border border-border">
-    <iframe
-      src="https://www.instagram.com/p/POST4/embed"
-      className="w-full h-full"
-      allowFullScreen
-      loading="lazy"
-      title="Instagram Post 4"
-    ></iframe>
-  </div>
-</div>
   </div>
 </section>
 
