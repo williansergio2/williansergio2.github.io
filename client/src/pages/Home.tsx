@@ -276,14 +276,14 @@ export default function Home() {
         alt="Will Info Gamer"
         className="h-10 w-auto"
       />
-      <div>
-        <h1 className="text-lg font-bold text-foreground">
-          Will Info Gamer
-        </h1>
-        <p className="text-xs text-muted-foreground">
-          Manutenção de Computadores
-        </p>
-      </div>
+      <div className="hidden sm:flex flex-col">
+  <h1 className="text-lg font-bold text-foreground">
+    Will Info Gamer
+  </h1>
+  <p className="text-xs text-muted-foreground">
+    Manutenção de Computadores
+  </p>
+</div>
     </Link>
 
     {/* Menu Central */}
