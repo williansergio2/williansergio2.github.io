@@ -449,12 +449,12 @@ export default function Home() {
     Confira alguns dos nossos projetos e manutenções realizadas
   </p>
   <div className="pt-6">
-  <a
+  <Link
     href="/galeria"
     className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-black rounded-lg font-semibold hover:scale-105 transition-transform duration-300"
   >
     Ver todos os trabalhos →
-  </a>
+  </Link>
 </div>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
