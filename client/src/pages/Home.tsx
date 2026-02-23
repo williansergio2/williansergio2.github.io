@@ -270,25 +270,27 @@ export default function Home() {
   <div className="container py-4 relative flex items-center justify-between">
 
     {/* Logo clicável */}
-    <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition">
-      <img
-        src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663357228819/EJqSyXEfbZYGZfem.png"
-        alt="Will Info Gamer"
-        className="h-10 w-auto"
-      />
-      <div className="hidden sm:flex flex-col">
-  <h1 className="text-lg font-bold text-foreground">
-    Will Info Gamer
-  </h1>
-  <p className="text-xs text-muted-foreground">
-    Manutenção de Computadores
-  </p>
-</div>
-    </Link>
+    <Link
+  href="/"
+  className="flex items-center gap-3 hover:opacity-80 transition"
+  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+>
+  <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663357228819/EJqSyXEfbZYGZfem.png" alt="Will Info Gamer" className="h-10 w-auto" />
+  <div className="hidden sm:flex flex-col">
+    <h1 className="text-lg font-bold text-foreground">Will Info Gamer</h1>
+    <p className="text-xs text-muted-foreground">Manutenção de Computadores</p>
+  </div>
+</Link>
 
     {/* Menu Central */}
     <nav className="absolute left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-4 text-sm font-medium">
-  <Link href="/" className="hover:text-orange-500 transition">Home</Link>
+  <Link
+  href="/"
+  className="hover:text-orange-500 transition"
+  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+>
+  Home
+</Link>
   <Link href="/sobre" className="hover:text-orange-500 transition">Sobre Nós</Link>
   <Link href="/galeria" className="hover:text-orange-500 transition">Galeria</Link>
   <Link href="/servicos" className="hover:text-orange-500 transition">Serviços</Link>
