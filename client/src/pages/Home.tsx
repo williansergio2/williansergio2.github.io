@@ -315,7 +315,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <a
-                href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orcamento%20📝💻😁"
+                href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg font-bold text-lg transition-all duration-300 glow-orange-hover transform hover:scale-105"
@@ -576,7 +576,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orcamento%20📝💻😁"
+                href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg font-bold text-lg transition-all duration-300 glow-orange-hover transform hover:scale-105"
@@ -618,7 +618,7 @@ export default function Home() {
               <h4 className="font-bold">Contato</h4>
               <div className="space-y-2 text-sm">
                 <a
-                  href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orcamento%20📝💻😁"
+                  href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-accent transition-colors flex items-center gap-2"
