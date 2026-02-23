@@ -280,7 +280,7 @@ export default function Home() {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orcamento%20📝💻😁"
+            href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent/90 text-accent-foreground rounded-md font-medium transition-all duration-300 glow-orange-hover"
