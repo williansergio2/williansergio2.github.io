@@ -266,7 +266,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
 
       {/* Header */}
-<header className="sticky top-0 z-50 bg-background/40 backdrop-blur-md border-b border-border">
+<header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-accent/30 shadow-sm">
   <div className="container py-4 relative flex items-center justify-between">
 
     {/* Logo clicável */}
