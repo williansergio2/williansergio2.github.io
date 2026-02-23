@@ -287,23 +287,13 @@ export default function Home() {
     </Link>
 
     {/* Menu Central */}
-    <nav className="absolute left-1/2 -translate-x-1/2 flex gap-8 text-sm font-medium">
-      <Link href="/" className="hover:text-orange-500 transition">
-        Home
-      </Link>
-      <Link href="/sobre" className="hover:text-orange-500 transition">
-        Sobre Nós
-      </Link>
-      <Link href="/galeria" className="hover:text-orange-500 transition">
-        Galeria
-      </Link>
-      <Link href="/servicos" className="hover:text-orange-500 transition">
-        Serviços
-      </Link>
-      <Link href="/contato" className="hover:text-orange-500 transition">
-        Contato
-      </Link>
-    </nav>
+    <nav className="absolute left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-4 text-sm font-medium">
+  <Link href="/" className="hover:text-orange-500 transition">Home</Link>
+  <Link href="/sobre" className="hover:text-orange-500 transition">Sobre Nós</Link>
+  <Link href="/galeria" className="hover:text-orange-500 transition">Galeria</Link>
+  <Link href="/servicos" className="hover:text-orange-500 transition">Serviços</Link>
+  <Link href="/contato" className="hover:text-orange-500 transition">Contato</Link>
+</nav>
 
     {/* Botão WhatsApp */}
     <a
