@@ -590,7 +590,7 @@ export default function Home() {
                 Pronto para <span className="text-accent">Potencializar ou Montar</span> seu PC?
               </h2>
               <p className="text-lg text-muted-foreground">
-                Entre em contato conosco para diagnóstico gratuito e orçamento sem compromisso
+                Entre em contato conosco para diagnóstico ou orçamento sem compromisso
               </p>
             </div>
 
