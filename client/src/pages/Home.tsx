@@ -630,7 +630,7 @@ export default function Home() {
                 <span className="font-bold">Will Info Gamer</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Manutenção e assistência técnica especializada em computadores e PCs Gamer
+                Informatica, Manutenção e assistência técnica especializada em computadores e PCs Gamer em Carapicuiba e Região
               </p>
             </div>
 
