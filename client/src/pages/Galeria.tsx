@@ -2,6 +2,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "wouter";
 import { useState } from "react";
 import { Instagram, Mail, ChevronLeft, ChevronRight } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next"
 
 type ModalData = {
   projectIndex: number;
@@ -408,4 +409,5 @@ export default function Galeria() {
 
     </div>
   );
+
 }
