@@ -5,6 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { InstagramSection } from "../components/InstagramSection";
 import { Link } from "wouter";
+import { Analytics } from "@vercel/analytics/next"
 
 
 
