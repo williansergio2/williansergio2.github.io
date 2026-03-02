@@ -2,6 +2,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "wouter";
 import { useState } from "react";
 import { Instagram, Mail } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Contato() {
   const [form, setForm] = useState({
@@ -297,4 +298,5 @@ ${form.mensagem}
 
     </div>
   );
+
 }
