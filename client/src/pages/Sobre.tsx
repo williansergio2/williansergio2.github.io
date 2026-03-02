@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "wouter";
 import { useState } from "react";
 import { Instagram, Mail, ChevronLeft, ChevronRight } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Sobre() {
   return (
@@ -254,4 +255,5 @@ export default function Sobre() {
       </footer>
     </div>
   );
+
 }
