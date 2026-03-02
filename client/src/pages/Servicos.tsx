@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "wouter";
 import { useState } from "react";
 import { Mail, Instagram, X } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Servicos() {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
@@ -305,4 +306,5 @@ ${
       </footer>
     </div>
   );
+
 }
