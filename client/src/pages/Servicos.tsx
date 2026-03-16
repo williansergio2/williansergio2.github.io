@@ -3,54 +3,37 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "wouter";
 import { useState } from "react";
 import { Mail, Instagram, X } from "lucide-react";
-import { Analytics } from "@vercel/analytics/next"
 
 export default function Servicos() {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [backupSize, setBackupSize] = useState("");
   const [observacao, setObservacao] = useState("");
 
-  // 🔥 Serviços principais apenas estão primeiro na lista
   const services = [
-  // 🔥 PRINCIPAIS
-  {
-    title: "Montagem de Computador",
-    description:
-      "Montagem com peças do cliente, organização de cabos e aplicação de Pasta Térmica de Alta Eficiência de 12,5w/mk.",
-  },
-  {
-    title: "Montagem Sob Medida",
-    description:
-      "Computador completo planejado sob demanda.",
-  },
-  {
-    title: "Limpeza Completa Premium",
-    description:
-      "Desmontagem total, limpeza peça por peça e aplicação de Pasta Térmica de Alta Eficiência de 12,5w/mk.",
-  },
-  { title: "Formatação / Instalação Windows", description: "Instalação Windows 7, 10 ou 11 com drivers atualizados e pacote Office incluso.",},
+    { title: "Montagem de Computador", description: "Montagem com peças do cliente, organização de cabos e aplicação de Pasta Térmica de Alta Eficiência de 12,5w/mk." },
+    { title: "Montagem Sob Medida", description: "Computador completo planejado sob demanda." },
+    { title: "Limpeza Completa Premium", description: "Desmontagem total, limpeza peça por peça e aplicação de Pasta Térmica de Alta Eficiência de 12,5w/mk." },
+    { title: "Formatação / Instalação Windows", description: "Instalação Windows 7, 10 ou 11 com drivers atualizados e pacote Office incluso." },
 
-  // 🔧 COMPLEMENTARES
-  { title: "Limpeza Preventiva", description: "Limpeza interna sem desmontagem total, troca por pasta termica prata de 5 w/mk" },
-  { title: "Avaliação Técnica", description: "Diagnóstico completo sujeito a avaliação." },
-  { title: "Manutenção Corporativa", description: "Manutenção para lotes de computadores de empresas ou escritorios, instalação dos equipamentos e preparação de embiente de trabalho " },
-  { title: "Troca de Hardware", description: "Substituição de componentes sob avaliação." },
-  { title: "Troca de Bateria da Placa Mãe", description: "Substituição da bateria CMOS." },
-  { title: "Atualização de BIOS", description: "Procedimento executado com segurança." },
-  { title: "Limpeza Completa de Placa de Vídeo", description: "Limpeza interna com troca de pasta térmica por pasta de alta eficiencia de 12,5w/mk" },
-  { title: "Remoção de Vírus", description: "Limpeza completa contra virus." },
-  { title: "Otimização de Sistema", description: "Correção de lentidão e travamentos." },
-  { title: "Instalação de Programas", description: "Instalação de softwares como Office, Photoshop, Autocad e CorelDRAW." },
-  { title: "Manutenção de Notebook", description: "Manutenção geral para notebooks, descreva sua necessidade a baixo do pedido" },
-  { title: "Backup de Dados", description: "Backup seguro conforme volume selecionado." },
-  { title: "Configuração de Rede", description: "Configuração de roteador e rede doméstica." },
-  { title: "Instalação de Setup Completo", description: "Organização e instalação completa do computador e seu local de uso" },
-  { title: "Venda de Peças Sob Encomenda", description: "Fornecimento de componentes." },
-  { title: "Troca de Cabos e Periféricos", description: "Substituição sob necessidade." },
-  { title: "Montagem de Setup Gamer", description: "Montagem completa de ambiente gamer." },
-  { title: "Não encontrei oque preciso", description: "Não encontrei oque preciso, liste sua necessidade no compo de pedido" },
-  //{ title: "Montagem de Setup Gamer", description: "Montagem completa de ambiente gamer." },
-];
+    { title: "Limpeza Preventiva", description: "Limpeza interna sem desmontagem total, troca por pasta termica prata de 5 w/mk" },
+    { title: "Avaliação Técnica", description: "Diagnóstico completo sujeito a avaliação." },
+    { title: "Manutenção Corporativa", description: "Manutenção para lotes de computadores de empresas ou escritorios." },
+    { title: "Troca de Hardware", description: "Substituição de componentes sob avaliação." },
+    { title: "Troca de Bateria da Placa Mãe", description: "Substituição da bateria CMOS." },
+    { title: "Atualização de BIOS", description: "Procedimento executado com segurança." },
+    { title: "Limpeza Completa de Placa de Vídeo", description: "Limpeza interna com troca de pasta térmica por pasta de alta eficiencia." },
+    { title: "Remoção de Vírus", description: "Limpeza completa contra virus." },
+    { title: "Otimização de Sistema", description: "Correção de lentidão e travamentos." },
+    { title: "Instalação de Programas", description: "Instalação de softwares como Office, Photoshop, Autocad e CorelDRAW." },
+    { title: "Manutenção de Notebook", description: "Manutenção geral para notebooks." },
+    { title: "Backup de Dados", description: "Backup seguro conforme volume selecionado." },
+    { title: "Configuração de Rede", description: "Configuração de roteador e rede doméstica." },
+    { title: "Instalação de Setup Completo", description: "Organização e instalação completa do computador." },
+    { title: "Venda de Peças Sob Encomenda", description: "Fornecimento de componentes." },
+    { title: "Troca de Cabos e Periféricos", description: "Substituição sob necessidade." },
+    { title: "Montagem de Setup Gamer", description: "Montagem completa de ambiente gamer." },
+    { title: "Não encontrei oque preciso", description: "Liste sua necessidade no campo de pedido." },
+  ];
 
   const toggleService = (service: string) => {
     setSelectedServices((prev) =>
@@ -59,9 +42,11 @@ export default function Servicos() {
         : [...prev, service]
     );
   };
-const removeService = (service: string) => {
-  setSelectedServices((prev) => prev.filter((s) => s !== service));
-};
+
+  const removeService = (service: string) => {
+    setSelectedServices((prev) => prev.filter((s) => s !== service));
+  };
+
   const generateWhatsAppMessage = () => {
     let message = `Olá Will Info Gamer 👋\n\nGostaria de solicitar os seguintes serviços:\n\n`;
 
@@ -70,8 +55,7 @@ const removeService = (service: string) => {
     });
 
     if (backupSize) message += `- Backup ${backupSize}\n`;
-    if (observacao)
-      message += `\nObservações:\n${observacao}\n`;
+    if (observacao) message += `\nObservações:\n${observacao}\n`;
 
     message += `\nAguardo retorno.`;
 
@@ -82,8 +66,8 @@ const removeService = (service: string) => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-secondary/20 to-background text-foreground">
 
-      {/* HEADER ORIGINAL */}
-      <header className="sticky top-0 z-50 bg-background/40 backdrop-blur-md border-b border-accent/60 shadow-sm">
+      {/* HEADER */}
+      <header className="sticky top-0 z-50 bg-background/60 border-b border-accent/60 shadow-sm">
         <div className="container py-4 relative flex items-center justify-between">
 
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition">
@@ -114,70 +98,74 @@ const removeService = (service: string) => {
             href="https://wa.me/5511975307066"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent/90 text-black rounded-md font-medium transition-all duration-300"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent/90 text-black rounded-md font-medium transition-all"
           >
             <FaWhatsapp className="w-5 h-5 text-black" />
             <span className="hidden sm:inline">WhatsApp</span>
           </a>
+
         </div>
       </header>
 
       <section className="container mx-auto py-16 px-4 md:px-6 space-y-16">
 
-        {/* TÍTULO */}
+        {/* TITULO */}
         <div className="text-center space-y-4 max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold">
             Lista com nossos Serviços
           </h1>
           <p className="text-muted-foreground text-lg">
-            Veja nossa lista de serviços, caso não encontre oque precisa basta escrever a baixo em pedidos.
+            Veja nossa lista de serviços, caso não encontre o que precisa basta escrever abaixo em pedidos.
           </p>
         </div>
 
-        {/* CAIXA EXTERNA DOS SERVIÇOS */}
-<div className="bg-secondary/10 backdrop-blur-md border border-border rounded-2xl p-8 shadow-lg">
+        {/* SERVIÇOS */}
+        <div className="bg-secondary/20 border border-border rounded-2xl p-8 shadow-lg">
 
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {services.map((service, index) => {
-      const isSelected = selectedServices.includes(service.title);
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      return (
-        <Card
-          key={index}
-          onClick={() => toggleService(service.title)}
-          className={`p-6 cursor-pointer transition-all duration-300 border rounded-xl
-${
-  isSelected
-    ? "border-accent bg-secondary/40 scale-105 shadow-[0_0_25px_rgba(255,140,0,0.5)]"
-    : "border-border bg-secondary/20 hover:scale-105 hover:border-accent/60 hover:shadow-[0_0_20px_rgba(255,140,0,0.35)]"
-}`}
-        >
-          <h3 className="text-xl font-bold mb-2">
-            {service.title}
-          </h3>
+            {services.map((service, index) => {
+              const isSelected = selectedServices.includes(service.title);
 
-          <p className="text-sm text-muted-foreground mb-4">
-            {service.description}
-          </p>
+              return (
+                <Card
+                  key={index}
+                  onClick={() => toggleService(service.title)}
+                  className={`p-6 cursor-pointer transition-all duration-200 border rounded-xl
+                  ${
+                    isSelected
+                      ? "border-accent bg-secondary/40 scale-[1.02] shadow-lg"
+                      : "border-border bg-secondary/20 hover:scale-[1.02] hover:border-accent/60 hover:shadow-md"
+                  }`}
+                >
+                  <h3 className="text-xl font-bold mb-2">
+                    {service.title}
+                  </h3>
 
-          <p className="text-xs text-muted-foreground">
-            💬 Preço sob consulta
-          </p>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {service.description}
+                  </p>
 
-          {isSelected && (
-            <p className="text-accent text-sm mt-2">
-              ✔ Adicionado ao pedido
-            </p>
-          )}
-        </Card>
-      );
-    })}
-  </div>
+                  <p className="text-xs text-muted-foreground">
+                    💬 Preço sob consulta
+                  </p>
 
-</div>
+                  {isSelected && (
+                    <p className="text-accent text-sm mt-2">
+                      ✔ Adicionado ao pedido
+                    </p>
+                  )}
+                </Card>
+              );
+            })}
+
+          </div>
+
+        </div>
 
         {/* PEDIDO */}
-        <div className="bg-secondary/30 backdrop-blur-md border border-border rounded-2xl p-8 space-y-6 shadow-lg">
+        <div className="bg-secondary/30 border border-border rounded-2xl p-8 space-y-6 shadow-lg">
+
           <h2 className="text-2xl font-bold text-center">
             Seu Pedido
           </h2>
@@ -186,19 +174,19 @@ ${
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 text-sm">
               {selectedServices.map((service, index) => (
                 <li
-  key={index}
-  className="flex justify-between items-center bg-background/60 px-4 py-2 rounded-md border border-border"
->
-  <span>{service}</span>
+                  key={index}
+                  className="flex justify-between items-center bg-background/60 px-4 py-2 rounded-md border border-border"
+                >
+                  <span>{service}</span>
 
-  <button
-    type="button"
-    onClick={() => removeService(service)}
-    className="text-red-500 hover:text-red-400 transition"
-  >
-    <X size={16} />
-  </button>
-</li>
+                  <button
+                    type="button"
+                    onClick={() => removeService(service)}
+                    className="text-red-500 hover:text-red-400 transition"
+                  >
+                    <X size={16} />
+                  </button>
+                </li>
               ))}
             </ul>
           )}
@@ -207,6 +195,7 @@ ${
             <label className="block mb-2 font-semibold">
               Backup (Opcional)
             </label>
+
             <select
               value={backupSize}
               onChange={(e) => setBackupSize(e.target.value)}
@@ -235,15 +224,18 @@ ${
           >
             Finalizar pelo WhatsApp
           </button>
+
         </div>
 
       </section>
 
-      {/* FOOTER ORIGINAL */}
+      {/* FOOTER */}
       <footer className="bg-secondary/30 border-t border-border py-12">
+
         <div className="container">
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            
+
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <img
@@ -253,6 +245,7 @@ ${
                 />
                 <span className="font-bold">Will Info Gamer</span>
               </div>
+
               <p className="text-sm text-muted-foreground">
                 Manutenção e assistência técnica especializada em computadores e PCs Gamer
               </p>
@@ -260,37 +253,40 @@ ${
 
             <div className="space-y-4">
               <h4 className="font-bold">Contato</h4>
-              <div className="space-y-2 text-sm">
-                <a
-                  href="https://wa.me/5511975307066"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-accent transition-colors flex items-center gap-2"
-                >
-                  <FaWhatsapp className="w-5 h-5 text-green-500" />
-                  WhatsApp: (11) 97530-7066
-                </a>
-                <a
-                  href="mailto:willian.sergio2@gmail.com"
-                  className="text-muted-foreground hover:text-accent transition-colors flex items-center gap-2"
-                >
-                  <Mail className="w-4 h-4" />
-                  willian.sergio2@gmail.com
-                </a>
-              </div>
+
+              <a
+                href="https://wa.me/5511975307066"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-accent transition flex items-center gap-2 text-sm"
+              >
+                <FaWhatsapp className="w-5 h-5 text-green-500" />
+                WhatsApp: (11) 97530-7066
+              </a>
+
+              <a
+                href="mailto:willian.sergio2@gmail.com"
+                className="text-muted-foreground hover:text-accent transition flex items-center gap-2 text-sm"
+              >
+                <Mail className="w-4 h-4" />
+                willian.sergio2@gmail.com
+              </a>
+
             </div>
 
             <div className="space-y-4">
               <h4 className="font-bold">Redes Sociais</h4>
+
               <a
                 href="https://instagram.com/willinfogamer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-accent transition-colors flex items-center gap-2 text-sm"
+                className="text-muted-foreground hover:text-accent transition flex items-center gap-2 text-sm"
               >
                 <Instagram className="w-4 h-4" />
                 @willinfogamer
               </a>
+
             </div>
 
           </div>
@@ -302,9 +298,11 @@ ${
               Itapevi, Embu das Artes e Santana de Parnaíba
             </p>
           </div>
+
         </div>
+
       </footer>
+
     </div>
   );
-
 }
