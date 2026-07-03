@@ -219,7 +219,7 @@ export default function Galeria() {
           </nav>
 
           <a
-            href="https://wa.me/5511975307066"
+            href="https://wa.me/5511915031507"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent/90 text-black rounded-md font-medium transition-all duration-300"
@@ -364,13 +364,13 @@ export default function Galeria() {
               <h4 className="font-bold">Contato</h4>
               <div className="space-y-2 text-sm">
                 <a
-                  href="https://wa.me/5511975307066"
+                  href="https://wa.me/5511915031507"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-accent transition-colors flex items-center gap-2"
                 >
                   <FaWhatsapp className="w-5 h-5 text-green-500" />
-                  WhatsApp: (11) 97530-7066
+                  WhatsApp: (11) 91503-1507
                 </a>
                 <a
                   href="mailto:willian.sergio2@gmail.com"
