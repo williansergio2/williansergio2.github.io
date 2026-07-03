@@ -59,7 +59,7 @@ export default function Servicos() {
 
     message += `\nAguardo retorno.`;
 
-    const url = `https://wa.me/5511975307066?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/5511915031507?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
@@ -95,7 +95,7 @@ export default function Servicos() {
           </nav>
 
           <a
-            href="https://wa.me/5511975307066"
+            href="https://wa.me/5511915031507"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent/90 text-black rounded-md font-medium transition-all"
@@ -255,13 +255,13 @@ export default function Servicos() {
               <h4 className="font-bold">Contato</h4>
 
               <a
-                href="https://wa.me/5511975307066"
+                href="https://wa.me/5511915031507"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition flex items-center gap-2 text-sm"
               >
                 <FaWhatsapp className="w-5 h-5 text-green-500" />
-                WhatsApp: (11) 97530-7066
+                WhatsApp: (11) 91503-1507
               </a>
 
               <a
