@@ -300,7 +300,7 @@ export default function Home() {
 
     {/* Botão WhatsApp */}
     <a
-      href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
+      href="https://wa.me/5511915031507?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent/90 text-black rounded-md font-medium transition-all duration-300"
@@ -340,7 +340,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
 
         <a
-          href="https://wa.me/5511975307066?text=Olá%20gostaria%20de%20solicitar%20um%20orçamento%20📝💻"
+          href="https://wa.me/5511915031507?text=Olá%20gostaria%20de%20solicitar%20um%20orçamento%20📝💻"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg font-bold text-lg transition-all duration-300 glow-orange-hover transform hover:scale-105"
@@ -603,13 +603,13 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
+                href="https://wa.me/5511915031507?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg font-bold text-lg transition-all duration-300 glow-orange-hover transform hover:scale-105"
               >
                 <FaWhatsapp className="w-5 h-5" />
-                WhatsApp: (11) 97530-7066
+                WhatsApp: (11) 91503-1507
               </a>
               <a
                 href="mailto:willian.sergio2@gmail.com"
@@ -645,13 +645,13 @@ export default function Home() {
               <h4 className="font-bold">Contato</h4>
               <div className="space-y-2 text-sm">
                 <a
-                  href="https://wa.me/5511975307066?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
+                  href="https://wa.me/5511915031507?text=Ola%20Gostaria%20de%20Solicitar%20um%20Orçamento%20📝💻😁"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-accent transition-colors flex items-center gap-2"
                 >
                   <FaWhatsapp className="w-5 h-5 text-green-500" />
-                  WhatsApp: (11) 97530-7066
+                  WhatsApp: (11) 91503-1507
                 </a>
                 <a
                   href="mailto:willian.sergio2@gmail.com"
