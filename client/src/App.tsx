@@ -9,6 +9,7 @@ import Galeria from "./pages/Galeria";
 import Servicos from "./pages/Servicos";
 import Contato from "./pages/Contato";
 import Sobre from "./pages/Sobre";
+import { Analytics } from "@vercel/analytics/react";
 
 function Router() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router />
+          <Analytics />
 
           {/* WhatsApp Chat Elfsight */}
           <div 
